@@ -18,32 +18,11 @@
       .material-symbols-rounded {
         font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
       }
-      .redacted {
-        color: black;
-        background-color: black;
-        white-space: nowrap;
-        -moz-transform: rotate(.8deg) skewx(-12deg);
-        transform: rotate(.8deg) skewx(-12deg);
-        background: -moz-linear-gradient(180deg, #000, #222);
-      }
-      /* Add a few more selectors with slightly varying styles */
-      .redacted:first-child {
-        -moz-transform: rotate(-.8deg);
-        transform: rotate(-.8deg);
-      }
-      .redacted:first-child + .redacted {
-        -moz-transform: rotate(3deg);
-        transform: rotate(3deg);
-      }
-      /* Highlight effect */
-      .redacted::-moz-selection {
-        background:#e6ff3f;
-      }
     </style>
-    <script src="blog-assets/detectsNewTab.js" type="text/javascript"></script>
+    <script src="blog-assets/js.js" type="text/javascript"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" type="text/javascript"></script> <!-- X timeline -->
   </head>
-  <body onload="detectsNewTab()">
+  <body onload="init()">
     <button id="goBack" class="customBtn" onclick="history.back()"><span class="material-symbols-rounded">arrow_back</span></button>
     <h1 style="text-align: center;">100 subs on yt.</h1>
     <br>
@@ -162,7 +141,7 @@
       essentially, a vtuber. some origins first tho: I started taking a full interest in the
       vtubing industry upon learning the termination of Uruha Rushia from HOLOLIVE last 24
       Feb 2022. from that on, I vowed to support all the vtubers that I meet in her honor.
-      I found some good fwens along the way, the likes of mama RIORIO and <span class="redacted">mama Viv</span>,
+      I found some good fwens along the way, the likes of mama RIORIO and <span redactText>mama Viv</span>,
       whom I grew up with alongside my first-ever fwen from the vtubing scene -- Lina Scott!!
       July came around when I started streming -- which is mama Kaiser's birthday month (cuz
       her bday is exactly 1 Jul), so it's kinda coincidental in a way.
